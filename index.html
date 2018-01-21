@@ -6,25 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Train Time</title>
+    <!-- Link to Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
         crossorigin="anonymous">
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
+    <!-- Link to Firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <!-- Link to Moment.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <!-- Link to external JS file -->
     <script src="assets/javascript/app.js"></script>
 </head>
 
 <body>
+    <div class="jumbotron">
+        <h1 class="display-4">Where would you like to go?</h1>
+        <p class="lead">Refer to the train schedule below to find out when the next train arrives!</p>
+        <hr class="my-4">
+        <p>Admins: Use the form below to add a new train line.</p>
+    </div>
 
     <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Where would you like to go?</h1>
-            <p class="lead">Refer to the train schedule below to find out when the next train arrives!</p>
-        </div>
-
-        <div class="card">
+        <div class="card" id="train-schedule">
             <div class="card-header">
                 Train Schedule
             </div>
@@ -39,20 +46,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">Train 1</th>
-                        <td>Minneapolis</td>
-                        <td>50</td>
-                        <td>00:00</td>
-                        <td>15</td>
-                    </tr>
                 </tbody>
             </table>
         </div>
 
-        <div class="card">
+        <div class="card" id="add-train">
             <div class="card-header">
-                Add a Train
+                Add a New Train Line
             </div>
             <form>
                 <div class="form-group">

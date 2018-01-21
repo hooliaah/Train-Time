@@ -1,3 +1,42 @@
 .jumbotron {
     text-align: center;
+    margin-bottom: 0px;
+    background-color: #62615d;
+    color: white;
 }
+
+.card {
+    margin-top: 20px; 
+}
+
+.table,
+.table td,
+.table th {
+    padding: 5px 20px;
+}
+
+.form-group {
+    padding: 5px 20px;
+    margin-bottom: 0px;
+}
+
+.card-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #5a85cc;
+}
+
+#add-train {
+    margin-bottom: 50px;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #fdc55b;
+ }
+
+ .btn-primary {
+    background-color: #dc4a40;
+    border-color: #5a85cc;
+    margin: 5px 20px;
+ }
